@@ -1,0 +1,187 @@
+.custom_nav{
+  background: linear-gradient(to right , rgb(214, 247, 252), pink);
+    backdrop-filter: blur(12px);
+    transition: all 0.5s ease-in-out;
+    padding: 1rem 0 ;
+}
+.nav-links .nav-link{
+    color: rgb(48, 5, 48) !important;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+.nav-links .nav-link:hover{
+    color: darkslategray !important;
+}
+.icon{
+    color: plum;
+font-size: 20px;
+font-weight: bold;
+}
+.icon:hover{
+      color: rgb(21, 164, 247);
+font-size: 20px;
+font-weight: bold; 
+}
+.icon-button{
+    background-color: gainsboro;
+    border-radius: 50%;
+    box-shadow: 3px 3px 5px black;
+}
+.custom-caption-left {
+  text-align: left !important;
+  left: 10% !important;
+  right: auto !important;
+  bottom: 30% !important;
+  
+}
+.custom-caption-left h1{
+    color: red;
+    font-weight: bold;
+    font-family: cursive;
+}
+.custom-caption-left button{
+     padding: 1.1em 2em;
+ background: none;
+ border: 2px solid #fff;
+ font-size: 15px;
+ color: #131313;
+ cursor: pointer;
+ position: relative;
+ overflow: hidden;
+ transition: all 0.3s;
+ border-radius: 12px;
+ background-color: #ecd448;
+ font-weight: bolder;
+ box-shadow: 0 2px 0 2px #000;
+}
+.custom-caption-left button:hover{
+     content: "";
+ position: absolute;
+ width: 100px;
+ height: 120%;
+ background-color: #ff6700;
+ top: 50%;
+ transform: skewX(30deg) translate(-150%, -50%);
+ transition: all 0.5s;
+}
+.nav-item-anim {
+  opacity: 0;
+  transform: translateY(-10px);
+  animation: dropIn 1s ease forwards;
+  transition: color 0.3s ease;
+}
+
+
+@keyframes dropIn {
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.nav-item-anim:hover {
+  color: #a8603f !important;
+}
+
+.caption-simple {
+  opacity: 0;
+  transform: translateX(100px);
+  animation: captionFade  1S ease forwards;
+}
+
+@keyframes captionFade {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.hotel-card {
+  border: none;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: #ffffff;
+}
+
+.hotel-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12) !important;
+}
+
+.card-img-wrapper {
+  position: relative;
+  overflow: hidden;
+  height: 220px;
+}
+
+.card-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.hotel-card:hover .card-img-wrapper img {
+  transform: scale(1.08);
+}
+
+.badge-featured {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  background: rgba(15, 23, 42, 0.75);
+  backdrop-filter: blur(8px);
+  color: #fff;
+  border-radius: 30px;
+  padding: 6px 14px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.btn-wishlist {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(8px);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #dc3545;
+  transition: all 0.2s ease;
+}
+
+.btn-wishlist:hover {
+  background: #ffffff;
+  transform: scale(1.1);
+}
+
+.amenity-chip {
+  background-color: #f8f9fa;
+  border: 1px solid #e9ecef;
+  color: #6c757d;
+  font-size: 0.75rem;
+  padding: 4px 10px;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.price-text {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #0d6efd;
+}
+
+.btn-book {
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
